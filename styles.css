@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ececec;
+  color: #000000;
+  line-height: 1.6;
+  padding: 10%;
+}
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+  nav {
+    background-color: #cccccc; /* Dark background */
+    padding: 1rem 2rem; /* Spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Space between links */
+    margin: 0;
+    padding: 0;
+  }
+
+.clapperboard_img{
+    margin-bottom: 10px;
+}

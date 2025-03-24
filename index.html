@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <!-- List-->
+     <nav>
+        <ul type="I" class="list">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">About Us</a>
+            </li>
+        </ul>
+     </nav>
+    
+
+    <!-- Image-->
+    <img class="clapperboard_img" width="500px" src="https://images.pexels.com/photos/7800235/pexels-photo-7800235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+    <!-- Table-->
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</Address></th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tshepo</td>
+                <td>South Africa</td>
+                <td>+27 00 000 0000</td>
+                <td>tshepo.southafrica@plp.org</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- Form-->
+    <form action="/submit" method="post" class="form">
+        <!-- First name-->
+        <label for="name">First name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+
+        <!-- Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" 
+        required>
+        <br>
+
+        <!-- Password-->
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password" required>
+        <br>
+
+        <!-- Date-->
+        <label for="date">Date:</label>
+        <input type="date">
+        <br>
+        <br>
+
+        <!-- Dropdown-->
+        <label for="dropdown">Choose your field:</label>
+        <select name="field" id="dropdown">
+            <option value="webdev">Web Developer</option>
+            <option value="mobiledev">Mobile Developer</option>
+        </select>
+        <br>
+
+        <!-- Radiobox-->
+        <fieldset>
+            <legend>Choose field</legend>
+            <input type="radio" id="rd_webdev" name="webdev" value="webdev">
+            <label for="rd_webdev">Webdev</label>
+            <br>
+
+            <input type="radio" id="rd_mobiledev" name="mobiledev" value="mobiledev">
+            <label for="rd_mobiledev">Mobile Developer</label>
+        </fieldset>
+        <br>
+
+        <!-- Checkbox-->
+        <fieldset>
+            <legend>Choose Your Field:</legend>
+
+            <label>
+                <input type="checkbox" name="webdev" value="webdev"> Web Developer
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="mobiledev" value="mobiledev"> Mobile Developer
+            </label>
+        </fieldset>
+
+    </form>
+</body>
+</html>
